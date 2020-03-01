@@ -1,15 +1,16 @@
 katz_deli = []
 
-def take_a_number(array, name)
-  array.push(name)
-  position = array.index(name)
-  puts "Welcome, #{name}. You are number #{array.index(name)+1} in line."
-  return name, position
+$counter = 0
+def take_a_number
+  $counter += 1
+  puts "Welcome, You are number #{$counter} in line."
+
 end
 
+take_a_number(katz_deli, "lola")
+take_a_number(katz_deli, "kitty")
 take_a_number(katz_deli, "deedee")
-take_a_number(katz_deli, "kamil")
-take_a_number(katz_deli, "kirsten")
+
 
 def line(array)
   if array.length == 0
